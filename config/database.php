@@ -57,9 +57,6 @@ return [
             'prefix_indexes' => true,
             'strict' => true,
             'engine' => null,
-            'options' => [
-                PDO::MYSQL_ATTR_SSL_CA => env('DB_SSL_CA_PATH'),
-            ],
         ],
 
         'mariadb' => [
@@ -114,16 +111,7 @@ return [
 
     ],
 
-    /*
-    |--------------------------------------------------------------------------
-    | Migration Repository Table
-    |--------------------------------------------------------------------------
-    |
-    | This table keeps track of all the migrations that have already run for
-    | your application. Using this information, we can determine which of
-    | the migrations on disk haven't actually been run on the database.
-    |
-    */
+   
 
     'migrations' => [
         'table' => 'migrations',
